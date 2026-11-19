@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Me | Nathan, Advertising Portfolio</title>
+<meta name="description" content="About Nathan: advertising major at Virginia Tech.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="wrap nav" aria-label="Main">
+    <a class="brand" href="index.html"><span class="mono">N</span><span class="brand-text">Nathan<small>Advertising &amp; Design</small></span></a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <ul class="nav-links" id="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="index.html#work">Work</a></li>
+<li><a href="about.html" aria-current="page">About Me</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+
+<section>
+  <div class="wrap split">
+    <div class="portrait"><img src="images/nathan.jpg" alt="Photo of Nathan"></div>
+    <div>
+      <span class="eyebrow">About me</span>
+      <h1 style="font-size:clamp(2rem,4.5vw,3rem)">Hi, I'm Nathan.</h1>
+      <p>I'm a junior at <strong>Virginia Tech</strong> majoring in <strong>Advertising</strong> with a minor in <strong>Spanish</strong>.</p>
+      <p>I'm a quick learner. Give me the right guidance or instructions and I can do just about anything, and when there isn't a guide, I'll teach myself. I'm artistically inclined, and I have a strong interest in graphic design and in taking on large projects, where one idea has to hold together across a lot of moving parts.</p>
+      <ul class="chips">
+        <li>Graphic design</li><li>Branding</li><li>Large creative projects</li><li>Quick learner</li><li>Self-taught</li><li>Spanish</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="wrap split" style="align-items:start">
+    <div>
+      <span class="eyebrow">What I enjoy creating</span>
+      <h2>Brands with a clear look and a clear idea.</h2>
+      <p>The work I enjoy most is building something from scratch and making every piece feel like it belongs together, like turning Coastal Threads from a name into a full brand with a logo, a strategy, and a campaign. Graphic design lets me use the artistic side of me, and big projects let me think about the whole picture.</p>
+    </div>
+    <div>
+      <span class="eyebrow">Goals</span>
+      <ul class="goal-list">
+        <li><strong>Academic</strong>Finish my advertising degree and Spanish minor at Virginia Tech with a strong portfolio of real work.</li>
+        <li><strong>Creative</strong>Keep building my graphic design skills and take on bigger brand and campaign projects.</li>
+        <li><strong>Career</strong>Build a long and successful career in the advertising and marketing field.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div><span class="footer-cta">Nathan</span><br>Advertising major &middot; Spanish minor &middot; Virginia Tech</div>
+    <div><a href="index.html#work">Work</a> &nbsp;&middot;&nbsp; <a href="about.html">About Me</a></div>
+  </div>
+</footer>
+<script>
+  const t = document.querySelector('.nav-toggle'), l = document.getElementById('nav-links');
+  t.addEventListener('click', () => { const o = l.classList.toggle('open'); t.setAttribute('aria-expanded', o); });
+</script>
+</body>
+</html>
